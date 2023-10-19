@@ -5,8 +5,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>cyberthreat</title>
-<link rel="stylesheet" href="fundoctype.css" >
+<title>whathappend?</title>
+<link rel="stylesheet" href="fundoctype.css">
 <script src="script.js"></script> 
 
 
@@ -14,6 +14,20 @@
 </head>
 
 <style>
+
+audio {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  audio::-webkit-media-controls-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 video {
         position: fixed;
@@ -28,7 +42,7 @@ video {
     }
 
     img {
-        position: fixed;
+        position: absolute;
             top: 12%;
             left: 10px;
             width: 500px; 
@@ -37,8 +51,8 @@ video {
 
     .train img {
     position: absolute;
-    top: 90px; 
-    left: 100px;
+    top: 500px; 
+    left: 800px;
     width: 900px; 
     height: 100px;
    
@@ -46,6 +60,7 @@ video {
 
 .nightpoem{
 position: absolute;
+text-align: right;
     top: 90px; 
     left: 800px;
     width: 900px; 
@@ -54,13 +69,20 @@ position: absolute;
 }
 
 
+
     
     </style>
 </head>
     <body> 
+
+        <audio id="myAudio" controls autoplay loop>
+            <source src="powerline.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
         
         <video autoplay muted loop id="myVideo">
-            <source src="moviemanic.mp4" type="video/mp4">
+            <source src="finalcompress.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -76,12 +98,12 @@ position: absolute;
 
             <a href="fourthpage.html">  Do you remember that night? <br>
                What did you feel?<br>
-               The pressure of excestice wasn't true with yOU<br>
+               The pressure of existence wasn't true with yOU<br>
                Let's go away<br>
                Take drugs and seize the day<br>
                Stay up all night jaw spun just to express<br>
-               But combress<br>
-               Combress vour emotions<br>
+               But compress<br>
+               Compress vour emotions<br>
                Don't let them go<br>
                It's okay<br>
                But you'll never know<br>

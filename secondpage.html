@@ -5,11 +5,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>cyberthreat</title>
+<title>whathappend?</title>
 <link rel="stylesheet" href="fundoctype.css">
+<script src="script.js"></script> 
 
 <title>eat grass im upset</title>
 <style>
+
+audio {
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  audio::-webkit-media-controls-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
     body {
         margin: 0;
         overflow: hidden;
@@ -118,6 +134,12 @@ div.mothpoemtwo {
 </style>
 </head>
 <body>
+
+  <audio id="myAudio" controls autoplay loop>
+      <source src="audiotwo.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
 
 <video autoplay muted loop id="myVideo">
     <source src="movieone.mp4" type="video/mp4">
